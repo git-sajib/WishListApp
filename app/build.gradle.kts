@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
-    id("com.google.devtools.ksp") version "1.8.20-1.0.11"
+    id("kotlin-kapt")
 }
 
 android {
@@ -52,17 +52,18 @@ android {
 
 dependencies {
 
+
     // Room
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
-    ksp(libs.androidx.room.compiler)
+    kapt(libs.androidx.room.compiler)
 
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.core.ktx)
 
-    implementation(libs.ui)
-    implementation(libs.material3)
-    implementation(libs.ui.tooling.preview)
+    implementation(libs.androidx.ui)
+    implementation(libs.androidx.material)
+    implementation(libs.androidx.ui.tooling.preview)
 
 
     implementation(libs.androidx.core.ktx)

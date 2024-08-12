@@ -8,18 +8,25 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.4"
 activityCompose = "1.9.1"
 composeBom = "2024.04.01"
+material = "1.6.0-alpha08"
 material3 = "1.6.8"
 navigationCompose = "2.7.7"
 roomRuntime = "2.6.1"
 ui = "1.6.8"
 uiToolingPreview = "1.6.8"
+material3Android = "1.2.1"
+uiToolingPreviewVersion = "1.6.0-alpha08"
+uiVersion = "1.6.0-alpha08"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomRuntime" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomRuntime" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomRuntime" }
+androidx-ui-tooling-preview-v160alpha08 = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreviewVersion" }
+androidx-ui-v160alpha08 = { module = "androidx.compose.ui:ui", version.ref = "uiVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -36,6 +43,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
 ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
 ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
+androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
