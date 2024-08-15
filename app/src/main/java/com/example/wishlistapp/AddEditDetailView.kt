@@ -95,7 +95,7 @@ fun WishTextField(
     OutlinedTextField(value = value,
         onValueChange = onValueChange,
         label = { Text(text = label, color = Color.Black) },
-        modifier = Modifier.fillMaxWidth(),
+        modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp),
         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Text),
         colors = TextFieldDefaults.outlinedTextFieldColors(
             textColor = Color.Black,
