@@ -28,7 +28,7 @@ class WishViewModel(
     lateinit var getAllWishes: Flow<List<Wish>>
 
     init {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             getAllWishes = wishRepository.getWishes()
         }
     }
